@@ -34,11 +34,7 @@ createApp({
     },
 
     checkDone(index) {
-      if (this.todolist[index].done == false) {
-        this.todolist[index].done = !this.todolist[index].done;
-      } else {
-        this.todolist[index].done = !this.todolist[index].done;
-      }
+      this.todolist[index].done = !this.todolist[index].done;
     }
   }
 }).mount('#app')
