@@ -35,7 +35,7 @@
             <h1>ToDo List</h1>
             <div class="input-group mb-3">
                 <input v-model="newTodo" type="text" class="form-control" placeholder="Inserisci nota"
-                    aria-label="Inserisci nota" aria-describedby="button-addon2">
+                    aria-label="Inserisci nota" aria-describedby="button-addon2" @keyUp.enter="addTodo()">
                 <button class="btn btn-outline-secondary" type="button" id="button-addon2" @click="addTodo()">Inserisci
                     nota</button>
             </div>

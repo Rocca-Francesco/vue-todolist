@@ -22,10 +22,6 @@ createApp({
     }
   },
 
-  computed: {
-
-  },
-
   methods: {
     deleteMe(index) {
       this.todolist.splice(index, 1);
@@ -34,6 +30,7 @@ createApp({
     addTodo() {
       const newNote = this.newTodo;
       this.todolist.push({ text: newNote, done: false })
+      this.newTodo = "";
     },
 
     checkDone(index) {
